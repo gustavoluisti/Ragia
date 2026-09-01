@@ -1,0 +1,22 @@
+[project]
+name = "ragia"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Luis Gustavo", email = "gustavoluisrh@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "docling>=2.124.0",
+    "fastembed>=0.8.0",
+    "ipykernel>=7.3.0",
+    "transformers>=5.8.1",
+]
+
+[project.scripts]
+ragia = "ragia:main"
+
+[build-system]
+requires = ["uv_build>=0.12.1,<0.13.0"]
+build-backend = "uv_build"

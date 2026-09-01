@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+*.egg
+build/
+dist/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.pytype/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs and local runtime files
+*.log
+*.tmp
+*.temp
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# Project-specific local data
+/data/
+*.sqlite3
+*.db
+
+# Environment variables
+.env
+.env.*
+
+# Packaging
+pip-wheel-metadata/
+
+# Coverage / test output
+.coverage
+.coverage.*
+htmlcov/
+
+# Local generated files
+generated/
+out/
+
+# OS files
+Thumbs.db

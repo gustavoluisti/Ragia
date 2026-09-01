@@ -1,8 +1,9 @@
 # RagIA
 
-Construção de um RAG usando documentos do projeto Téo Me Why
+RAG para busca inteligente e resposta contextualizada sobre documentos
 
 ## Índice
+
 - [Etapas](#etapas)
   - [Dados](#dados)
     - [Vídeos](#vídeos)
@@ -37,11 +38,13 @@ Trataremos cada documento (vídeo, artigo, postagem) será "quebrado" em vários
 Cada chunk de cada documento é inserido no banco de dados vetorial Qdrant. Por amor a simplicidade vamos utilizar o serviço cloud do Qdrand em sua versão gratuita.
 
 Métodos de busca que utilizaremos:
+
 - Densa
 - Esparsa
 - Colbert
 
 Metadados do chunk:
+
 - id
 - nome do documento original (da onde o chunk pertence);
 
@@ -52,6 +55,7 @@ Ou seja, para o mesmo chunk do documento, criaremos 3 vetores (embeding) distint
 Utilizaremos a API do [Groq](https://groq.com/) para inferência das LLMs.
 
 Utilizaremos os seguintes argumentos no prompt:
+
 - consulta: pergunta do usuário
 - contexto: lista de k-top documentos encontrados na busca vetorial
 - instrução: detalhes de como o modelo de genAI deve responder
@@ -65,4 +69,5 @@ A priori a resposta só será gerada para Subs do canal.
 ## Referência
 
 Nossa inspiração de projeto se deu pelos estudos no curso [deveficiente.com](https://deveficiente.com/oferta-20-especializacao-engenharia-ia?ref=E103343389X&gad_source=1&gad_campaignid=23529177118&gbraid=0AAAABCphGGuicDSEPCRE6hUy782iwutXB&gclid=Cj0KCQjw4PPNBhD8ARIsAMo-icytIETcbuMhL6cViG7JgY6MhpGOsRi_KrVxqJVDEHwyfgVa6kDdqJMaAgUiEALw_wcB)
+
 # Ragia
